@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danceaholic</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+      color: #22223b;
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 2.5rem 0 2.5rem 0;
+      background: rgba(255,255,255,0.5);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #be185d;
+      letter-spacing: 0.05em;
+      margin: 0;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0);}
+      30% { transform: translateY(-35px);}
+      50% { transform: translateY(0);}
+      70% { transform: translateY(-15px);}
+    }
+    header p {
+      font-style: italic;
+      margin: 0.75rem 0 0 0;
+      font-size: 1.2rem;
+    }
+    nav {
+      margin-top: 1.5rem;
+    }
+    nav a {
+      color: #be185d;
+      font-weight: 600;
+      text-decoration: none;
+      margin: 0 1rem;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #a21caf;
+      text-decoration: underline;
+    }
+    section {
+      padding: 4rem 0;
+      text-align: center;
+    }
+    .welcome-section h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .welcome-section span {
+      color: #be185d;
+    }
+    .welcome-section p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem auto;
+    }
+    .welcome-section button {
+      background: #be185d;
+      color: #fff;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 999px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .welcome-section button:hover {
+      background: #a21caf;
+    }
+    .videos-section h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 2px 2px 8px #a78bfa;
+      margin-bottom: 2rem;
+    }
+    .video-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      padding: 0 1.5rem;
+    }
+    .video-grid iframe {
+      border-radius: 1rem;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      background: #000;
+    }
+    @media (max-width: 900px) {
+      .video-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+      .video-grid iframe {
+        max-width: 95vw;
+        height: 220px;
+      }
+    }
+    .join-section h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1.5rem;
+      text-shadow: 2px 2px 8px #a78bfa;
+    }
+    .join-section p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      background: #be185d;
+      color: #fff;
+      font-size: 1rem;
+      margin-top: 2rem;
+    }
+    
+  </style>
+</head>
+<body>
+<header>
+    <h1>Danceaholic</h1>
+    <p>“Learn to move, Enjoy the groove.”</p>
+    <nav>
+      <a href="https://lmsndgzmn.wordpress.com/">1st Website</a>
+      <a href="file:///C:/Users/win10/Desktop/index%20(4).html">Dance Styles</a>
+      <a href="#videos">Videos</a>
+      <a href="file:///C:/Users/win10/Desktop/index%20(3).html#videos">Author</a>
+    </nav>
+  </header>
+
+  <section class="welcome-section">
+    <h2>Welcome to <span>Danceaholic!</span></h2>
+    <p>
+      This website aims to <b>provide knowledge</b> to the people about the <b>different various styles of dancing.</b>
+    </p> 
+    <a href="https://justdancenow.com/" target="_blank">
+    <button>Try to Dance! (Click)</button>
+    </a>
+  </section>
+  <section class="dance-definition" style="text-align: center; padding: 2rem 0;">
+    <img src="dancingdef.jpg" alt="What is Dancing" style="max-width: 1200px; width: 120% margin-bottom: 1.5rem;">
+  </section>
+ </section>
+  <section class="dance-definition" style="text-align: center; padding: 2rem 0;">
+    <img src="download (3).jpg" style="max-width: 1300px; width: 120% margin-bottom: 1.5rem;">
+  </section>
+  <section id="videos" class="videos-section">
+    <h3>Watch & Learn</h3>
+    <div class="video-grid">
+      <iframe
+        src="https://www.youtube.com/embed/C62596gVnT8?si=1JK324S3xdEuYNNo"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+      <iframe
+        src="https://www.youtube.com/embed/DI7P_uHAjeY?si=26ZHN5cUsvdPvEnR"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+  <section id="videos" class="videos-section">
+    <h3> For more further information <b>click the different clickable words</b> in the header!</h3>
+    <div class="video-grid">
+  </section>
+
+  <footer>
+    <p>© OCTOBER 2025 Danceaholic | Made with Love and Rhythm by Gian De Guzman</p>
+  </footer>
+</body>
+</html>
