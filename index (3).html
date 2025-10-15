@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Author</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #22223b;
+      background: linear-gradient(135deg, #dbeeff 0%, #4896d6 50%, #89f7fe 100%);
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      padding: 2.5rem 1rem 2rem 1rem;
+      background: rgba(255,255,255,0.5);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #2b75c9;
+      letter-spacing: 0.05em;
+      margin: 0;
+      /* Pop fade-in with 360deg rotation */
+      opacity: 0;
+      transform: scale(0.5) rotate(0deg);
+      animation: popFadeRotate 3s cubic-bezier(.68,-0.55,.27,1.55) forwards infinite;
+    }
+    @keyframes popFadeRotate {
+      0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(0deg);
+      }
+      60% {
+        opacity: 1;
+        transform: scale(1.2) rotate(360deg);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) rotate(360deg);
+      }
+    }
+    header p {
+      font-size: 1.25rem;
+      margin-top: 0.75rem;
+      font-style: italic;
+      color: #444;
+    }
+    nav {
+      margin-top: 1.5rem;
+    }
+    nav a {
+      display: inline-block;
+      margin: 0 0.75rem;
+      font-weight: 600;
+      color: #444;
+      text-decoration: none;
+      transition: color 3s;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      color: #2b89d6;
+    }
+    section {
+      text-align: center;
+      padding: 5rem 1rem 2rem 1rem;
+    }
+    h2 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .highlight {
+      color: #104d92;
+    }
+    section p {
+      font-size: 1.125rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem auto;
+      color: #333;
+    }
+    .main-btn {
+      background: #195791;
+      color: #fff;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 999px;
+      font-size: 1.125rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .main-btn:hover {
+      background: #486cbb;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      section { padding: 2.5rem 1rem 1rem 1rem; }
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      background: #1b5fad;
+      color: #fff;
+      font-size: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Author</h1>
+    <p>Who created this website?</p>
+    <nav>
+      <a href="file:///C:/Users/win10/Desktop/index%20(2).html#videos">Personal Info</a>
+      <a href="file:///C:/Users/win10/Desktop/New%20index.html">Profile</a>
+      <a href="file:///C:/Users/win10/Desktop/index%20(5).html">Date Publish</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Want to <span class="highlight">Communicate with me?</span></h2>
+    <p>
+    Click this link to visit his Social Media Account!
+    </p>
+    <a  href="https://linktr.ee/chokhaerr?utm_source=linktree_profile_share&ltsid=ebceab8d-98af-486a-baa5-8450d7903810" target="_blank">
+    <button class="main-btn">Social Media</button>
+    </a>
+  </section>
+   <footer>
+    <p>© OCTOBER 2025 Danceaholic | Made with Love and Rhythm by Gian De Guzman</p>
+  </footer>
+</body>
+</html>
