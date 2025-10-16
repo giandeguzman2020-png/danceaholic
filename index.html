@@ -6,73 +6,57 @@
   <title>Danceaholic</title>
   <style>
     body {
-      background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
-      color: #22223b;
+      background-color: #ffc4e2;
       font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-      margin: 0;
-      padding: 0;
     }
     header {
       text-align: center;
       padding: 2.5rem 0 2.5rem 0;
-      background: rgba(255,255,255,0.5);
-      backdrop-filter: blur(8px);
-      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-      position: sticky;
-      top: 0;
-      z-index: 50;
+     background-color: #f38fc1; 
     }
     header h1 {
       font-size: 3rem;
       font-weight: 800;
       color: #be185d;
       letter-spacing: 0.05em;
-      margin: 0;
-      animation: bounce 2s infinite;
-    }
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0);}
-      30% { transform: translateY(-35px);}
-      50% { transform: translateY(0);}
-      70% { transform: translateY(-15px);}
-    }
+       animation: bounce 2s infinite;
+            margin: 0;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0);}
+            30% { transform: translateY(-35px);}
+            50% { transform: translateY(0);}
+            70% { transform: translateY(-15px);}    
+    } 
     header p {
       font-style: italic;
-      margin: 0.75rem 0 0 0;
       font-size: 1.2rem;
     }
-    nav {
-      margin-top: 1.5rem;
-    }
+    
     nav a {
       color: #be185d;
       font-weight: 600;
-      text-decoration: none;
-      margin: 0 1rem;
-      transition: color 0.2s;
+      margin: 1rem;
     }
     nav a:hover {
-      color: #a21caf;
+      color: #fdf07c;
       text-decoration: underline;
     }
     section {
-      padding: 4rem 0;
+      padding: 4rem;
       text-align: center;
     }
-    .welcome-section h2 {
+    h2 {
       font-size: 2.5rem;
       font-weight: 700;
       margin-bottom: 1rem;
     }
-    .welcome-section span {
-      color: #be185d;
-    }
-    .welcome-section p {
+     p {
       font-size: 1.2rem;
       max-width: 600px;
-      margin: 0 auto 1.5rem auto;
+      margin:1.5rem auto;
     }
-    .welcome-section button {
+    button {
       background: #be185d;
       color: #fff;
       padding: 0.75rem 2rem;
@@ -80,36 +64,34 @@
       border-radius: 999px;
       font-size: 1.1rem;
       font-weight: 600;
-      cursor: pointer;
       transition: background 0.2s;
     }
-    .welcome-section button:hover {
-      background: #a21caf;
+    button:hover {
+      background: #f0e15c;
     }
-    .videos-section h3 {
+    h3 {
       font-size: 2rem;
       font-weight: 700;
       color: #fff;
       text-shadow: 2px 2px 8px #a78bfa;
       margin-bottom: 2rem;
     }
-    .video-grid {
+    {
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
       justify-content: center;
       padding: 0 1.5rem;
     }
-    .video-grid iframe {
+    iframe {
       border-radius: 1rem;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
       width: 100%;
       max-width: 560px;
       height: 315px;
       background: #000;
     }
-    @media (max-width: 900px) {
-      .video-grid {
+    (max-width: 900px) {
+      .{
         flex-direction: column;
         align-items: center;
       }
@@ -117,17 +99,6 @@
         max-width: 95vw;
         height: 220px;
       }
-    }
-    .join-section h3 {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 1.5rem;
-      text-shadow: 2px 2px 8px #a78bfa;
-    }
-    .join-section p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
     }
     footer {
       text-align: center;
@@ -173,18 +144,13 @@
     <div class="video-grid">
       <iframe
         src="https://www.youtube.com/embed/C62596gVnT8?si=1JK324S3xdEuYNNo"
-        title="YouTube video player"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen>
       </iframe>
       <iframe
         src="https://www.youtube.com/embed/DI7P_uHAjeY?si=26ZHN5cUsvdPvEnR"
         title="YouTube video player"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen>
       </iframe>
     </div>

@@ -9,7 +9,7 @@
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
       color: #22223b;
-      background: linear-gradient(135deg, #dbeeff 0%, #4896d6 50%, #89f7fe 100%);
+      background: linear-gradient( #dbeeff 0%, #4896d6 50%, #89f7fe 100%);
       min-height: 100vh;
     }
     header {
@@ -27,13 +27,12 @@
       font-weight: 800;
       color: #2b75c9;
       letter-spacing: 0.05em;
-      margin: 0;
-      /* Pop fade-in with 360deg rotation */
+      margin: 0
       opacity: 0;
       transform: scale(0.5) rotate(0deg);
-      animation: popFadeRotate 3s cubic-bezier(.68,-0.55,.27,1.55) forwards infinite;
+      animation: popFadeRotate 3s forwards infinite;
     }
-    @keyframes popFadeRotate {
+    @keyframes popFadeRotate { 
       0% {
         opacity: 0;
         transform: scale(0.5) rotate(0deg);
@@ -66,7 +65,7 @@
       font-size: 1rem;
     }
     nav a:hover {
-      color: #2b89d6;
+      color: #0f12db;
     }
     section {
       text-align: center;
